@@ -12,7 +12,7 @@ def approval_program():
     no_key = Bytes("no")
     number_of_votes_key = Bytes("number_of_votes")
     
-
+    # Time related values are expected to be in UNIX timestamp ex: 1667885144 (seconds)
     on_create = Seq([
       App.globalPut(token_key, Btoi(Txn.application_args[0])),
       App.globalPut(timelock_key, Btoi(Txn.application_args[1])),

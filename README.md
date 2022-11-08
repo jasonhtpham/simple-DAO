@@ -32,6 +32,7 @@ Example: Assuming `Box` is a smart contract that holds a number:
 This contract needs the following functions:
 - [x] on_creation
 - [x] vote
+- [ ] propose
 - [ ] queue
 - [ ] execute
 ### Timelock
